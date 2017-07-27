@@ -1,60 +1,67 @@
-<!DOCTYPE html>
-<html lang="us-en">
+<!doctype html>
+<html lang="en-us">
+
 <head>
-
-	<meta charset="UTF-8">
-	<title>James Waite - Contact Me</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | James Waite</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-	<header>
-    	<h1>James Waite</h1>
-        	<nav>
-            	<ul>
-                	<a href="index.html" class="headLink"><li>About</li></a>
-                	<a href="portfolio.html" class="headLink"><li>Portfolio</li></a>
-                	<a href="contact.html" class="headLink"><li>Contact</li></a>
-            	</ul>
-        	</nav>
-	</header>
-
-    <div id="main">
-        <div id="mainContent">
-
-            <h2>Contact</h2>
-
-			<form action="">
-				Name<br>
-				<input type="text" name="name" placeholder="John Smith">
-				<br>
-				Email<br>
-				<input type="text" name="email" placeholder="example@gmail.com">
-				<br>
-				Message<br>
-				<textarea name="message" rows="10" cols="30"></textarea>
-				<br><br>
-				<input id="button" type="submit" value="Submit">
-			</form>
-
-        </div>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">James Waite</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div id="sidebar">
-        <h2>Connect With Me</h2>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
         <ul>
-            <a href="https://github.com/waitjameswaite"  target="none"><img src="assets/images/if_github-square-social-media_764894.png" alt="gitHub" style="width:64px;height:64px"></a>
-            <a href="https://www.linkedin.com/in/james-waite-265913139/"  target="none"><img src="assets/images/if_linkedin-square-social-media_764863.png" alt="LinkedIn" style="width:64px;height:64px"></a>
-            <a href="https://stackoverflow.com/users/8185106/waitjameswaite"  target="none"><img src="assets/images/if_stackoverflow-square-social-media_764872.png" alt="StackOverflow" style="width:64px;height:64px"></a>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
         </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 James Waite
     </div>
-
-   	<footer>
-		&#169; 2017 James Waite
-	</footer>
-
+  </footer>
 </body>
+
 </html>
